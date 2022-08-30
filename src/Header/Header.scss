@@ -1,0 +1,25 @@
+.Header {
+  padding: 24px 24px 192px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .img {
+    height: 24px;
+
+    .riot {
+      border-right: 2px solid #F9F9F9;
+      padding-right: 16px;
+    }
+
+    .lol {
+      padding-left: 16px;
+    }
+
+    .riot,
+    .lol,
+    .netflix {
+      height: 100%;
+
+    }
+  }
+}
