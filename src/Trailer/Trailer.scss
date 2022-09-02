@@ -1,3 +1,5 @@
+@import '../_variaveis/variaveis.scss';
+
 .Trailer {
   padding: 0 24px;
   text-align: center;
@@ -17,9 +19,9 @@
       font-weight: 600;
       padding: 16px 86px;
       text-transform: uppercase;
-      background: #E3D2BC;
-      border: 2px solid #111111;
-      color: #111111;
+      background: $fundo;
+      border: 2px solid $cor-texto;
+      color: $cor-texto;
     }
   }
 }
