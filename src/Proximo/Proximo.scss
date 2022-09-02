@@ -1,63 +1,82 @@
 @import '../_variaveis/variaveis.scss';
 
-.blog {
+.video {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 209px 1.5rem 0 1.5rem;
-}
+  padding-top: 209px;
 
-.blog-post {
-  background-color: $fundo;
-  width: 100%;
-  max-width: 40rem;
-  padding: 1rem 0;
-  display: flex;
-  align-items: center;
-  border: 2px solid $cor-texto;
-}
+  .video-post {
+    background-color: $fundo;
+    width: 50%;
+    // max-width: 40rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid $cor-texto;
 
-.blog-post_img {
-  width: 50%;
-  transform: translateX(-2.5rem);
-}
+    a {
+      text-decoration: none;
+    }
 
-.blog-post_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    .video-img {
+      width: 25%;
+      // width: 50%;
+      transform: translateX(-2.5rem);
 
-.blog-post_date {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin: .5rem 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .video-content {
+
+      // display: block;
+      font-size: 32px;
+      font-weight: 600;
+      font-family: $font-text;
+
+      .text {
+        color: $cor-texto;
+        line-height: 24px;
+      }
+
+      .data {
+        padding: 24px 0;
+        font-size: 12px;
+        color: $cor-subtexto;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:1068px) {
-  .blog-post_img {
+  .video-img {
     min-width: 20rem;
     max-width: 20rem;
   }
 }
 
 @media screen and (max-width:868px) {
-  .blog-post {
+  .video-post {
     max-width: 40rem;
   }
 }
 
-@media screen and (max-width:468px) {
-  .blog-post {
+@media screen and (max-width:746px) {
+  .video-post {
     padding: 2.5rem;
     flex-direction: column;
+    padding: 0 20px;
+
+    .video-img {
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(-3.5rem);
+    }
   }
 
-  .blog-post_img {
-    min-width: 100%;
-    max-width: 100%;
-    transform: translate(0, -3.5rem);
-  }
 }

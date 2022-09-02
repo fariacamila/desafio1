@@ -3,17 +3,19 @@ import './Proximo.scss'
 
 const Proximo = () => {
   return (
-    <section className="blog">
-      <div className="blog-post">
-        <div className="blog-post_img">
+    <section className="video">
+      <div className="video-post">
+        <div className="video-img">
           <img src={arcane} alt="#" />
         </div>
-        <div className="blog-post_info">
-          <div className="blog-post_date">
-            <span>Assista ao novo episódios</span>
-            <span>13 de novembro, 2021</span>
+        <a href="https://www.netflix.com/br/title/81435684" target='_blank'>
+          <div className="video-info">
+            <div className="video-content">
+              <p className='text'>Assista ao novo episódios</p>
+              <p className='data'>13 de novembro, 2021</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
   )
